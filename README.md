@@ -9,6 +9,9 @@ You know you want to! Make it so.
 * More services: (add more here that could use this)
 * Convince Amazon to support this natively, they aren't fooling anybody by not supporting this. It is totally easy and they can do it.
 
+# Why not HAProxy or something else?
+* Good luck getting it working, this code should be easier.
+
 # Caveats
 * Will not work with redis in "Cluster Mode" because IP addresses cannot really be remapped under cluster mode's system.
 * You just exposed your service over the internet...
