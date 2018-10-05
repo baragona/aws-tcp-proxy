@@ -16,7 +16,7 @@ You know you want to! Make it so.
 # How to Use:
 * This app is distributed as an AMI containing a docker container.
 * Create an instance with the public AMI: (insert link here)
-* Attach tags to the instance which links port numbers to DNS names to proxy to.
+* Attach tags to the instance which links port numbers to DNS names and ports to proxy to.
 * The instance will automatically detect the updated tags and setup the proxy.
 * Ensure your security group allows accessing the ports you need.
 * Access your new instance via its public IP address, and the port you have set up as a proxy, or attach a DNS name...
