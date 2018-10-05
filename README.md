@@ -17,6 +17,8 @@ You know you want to! Make it so.
 * This app is distributed as an AMI containing a docker container.
 * Create an instance with the public AMI: (insert link here)
 * Attach tags to the instance which links port numbers to DNS names and ports to proxy to.
+  - such as: "7777" : "myserverlesscluster.cluster-abcdefghj.us-west-2.rds.amazonaws.com:3306"
+  - this would set up a listener on port 7777 on your new instance pointing to that DNS name and remote port 3306
 * The instance will automatically detect the updated tags and setup the proxy.
 * Attach a IAM Role to your instance that allows EC2 Read-only access
 * Ensure your security group allows accessing the ports you need.
