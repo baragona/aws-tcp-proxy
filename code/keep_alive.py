@@ -4,7 +4,7 @@ import subprocess
 import sys
 import time
 
-cmd_list = sys.argv[:1]
+cmd_list = sys.argv[1:]
 while True:
     try:
         print('Calling in keep_alive.py:')
