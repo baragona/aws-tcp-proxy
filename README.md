@@ -33,3 +33,10 @@ This will tag the image 'proxy'
 docker build -t proxy .
 docker run --network host -d --restart unless-stopped --name aws-tcp-proxy proxy
 ```
+Or pull from dockerhub:
+```commandline
+docker pull ojotoxy/aws-tcp-proxy
+docker run --network host -d --restart unless-stopped --name aws-tcp-proxy ojotoxy/aws-tcp-proxy
+
+
+```
