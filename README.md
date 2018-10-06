@@ -26,3 +26,10 @@ You know you want to! Make it so.
 * Attach a IAM Role to your instance that allows EC2 Read-only access
 * Ensure your security group allows accessing the ports you need.
 * Access your new instance via its public IP address, and the port you have set up as a proxy, or attach a DNS name...
+
+# How to build & run the Docker Container:
+This will tag the image 'proxy'
+```commandline
+docker build -t proxy .
+docker run --network host -d --restart unless-stopped --name aws-tcp-proxy proxy
+```
